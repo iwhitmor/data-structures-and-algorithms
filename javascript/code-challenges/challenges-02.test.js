@@ -30,6 +30,7 @@ const addOne = (arr) => {
   arr.map(number => {
     result.push(number + 1);
   });
+
   return result;
 };
 /* ------------------------------------------------------------------------------------------------
@@ -39,7 +40,11 @@ Write a function named addQuestion that, given an array of strings, uses map to 
 ------------------------------------------------------------------------------------------------ */
 
 const addQuestion = (arr) => {
-  // Solution code here...
+  let result = [];
+  arr.map(string => {
+    result.push(`${string}?`);
+  });
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -52,9 +57,9 @@ You may choose to complete this challenge using a for loop, for...in syntax, or 
 For example, twoToThe([1,2,3]) returns [2,4,8] because 2 ^ 1 = 2, 2 ^ 2 = 4, and 2 ^ 3 = 8.
 ------------------------------------------------------------------------------------------------ */
 
-const forLoopTwoToThe = (arr) => {
+function forLoopTwoToThe(arr) {
   // Solution code here...
-};
+}
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -220,7 +225,7 @@ describe('Testing challenge 2', () => {
   });
 });
 
-xdescribe('Testing challenge 3', () => {
+describe('Testing challenge 3', () => {
   test('It should add a question mark to the end of each string', () => {
     expect(addQuestion(['hello', '301', 'students'])).toStrictEqual(['hello?', '301?', 'students?']);
   });
