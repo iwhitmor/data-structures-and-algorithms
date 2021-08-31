@@ -43,10 +43,10 @@ Write a function named `allUpperCase` that takes an array of strings, and return
 Use `forEach` to loop over the input array. The modified strings should each be added into a local array. Return that local array.
 ------------------------------------------------------------------------------------------------ */
 
-const allUpperCase = (arr) => {
+const allUpperCase = (words) => {
   let result = [];
-  arr.forEach((string) => {
-    result.push(string.toUpperCase());
+  words.forEach((word, i) => {
+    result[i] = word.toUpperCase();
   });
   return result;
 };
@@ -62,16 +62,18 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
-  let result = 'string';
-  word.forEach((string) => {
-    result.push(string.toUpperCase() + '!');
-  });
+  let upper = word.toUpperCase();
+  return `${upper}!`;
 };
 
 const speaker = (words, callback) => {
   let result = [];
-  
+  words.forEach(word => {
+    let callbackResult = callback(word);
+    result.push(callbackResult);
   });
+
+  return result;
 };
 
 /*------------------------------------------------------------------------------------------------
