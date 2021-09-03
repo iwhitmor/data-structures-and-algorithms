@@ -46,10 +46,12 @@ Write a function called sortNumbers that takes an array of numbers and sorts the
 HINT: Beware... JS default is "Lexical" ordering.
 ------------------------------------------------------------------------------------------------ */
 
-const sortNumbers = (arr) => {
-  if (a < b) {return -1;}
-  if (b < a) {return +1;}
-  else {return 0;}
+const sortNumbers = (numb) => {
+  numb.sort ((a,b) => {
+    if (a < b) {return -1;}
+    if (a > b) {return +1;}
+    else {return 0;}
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
