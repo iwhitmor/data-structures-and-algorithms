@@ -43,7 +43,7 @@ Write a function named removeThree that takes an index and an array. The functio
 ------------------------------------------------------------------------------------------------ */
 
 const removeThree = (idx, arr) => {
-  idx = arr.splice(2,3);
+  arr.splice(2,3);
   return arr;
 };
 
