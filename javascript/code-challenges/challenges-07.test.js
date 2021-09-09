@@ -29,7 +29,7 @@ const sortStarWarsCharacters = (characters) => {
     if (a.height > b.height) {
       return 1;
     }
-    if (a.height < b.height) {
+    if (a.height < b.heightt) {
       return -1;
     }
     return 0;
