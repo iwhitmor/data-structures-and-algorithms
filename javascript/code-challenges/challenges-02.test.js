@@ -23,11 +23,8 @@ Write a function named addOne that, given an array of numbers, uses map to retur
 ------------------------------------------------------------------------------------------------ */
 
 const addOne = (arr) => {
-  let result = arr.map(number => {
-    return number + 1;
-  });
-
-  return result;
+  return arr.map(number =>
+    number + 1);
 };
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -36,9 +33,7 @@ Write a function named addQuestion that, given an array of strings, uses map to 
 ------------------------------------------------------------------------------------------------ */
 
 const addQuestion = (arr) => {
-  // let result = [];
   return arr.map(string => `${string}?`);
-
 };
 
 /* ------------------------------------------------------------------------------------------------
