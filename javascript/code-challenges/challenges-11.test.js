@@ -33,9 +33,10 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 ------------------------------------------------------------------------------------------------ */
 
 const count = (target, input) => {
-  input.map(array => {
-    
-  });
+  input.map(
+    innerArray => innerArray.filter(num => num === target).length
+  )
+    .reduce((sum, nextCount) => sum + nextCount, 0);
 };
 
 /* ------------------------------------------------------------------------------------------------
