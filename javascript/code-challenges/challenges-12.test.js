@@ -47,7 +47,8 @@ If it does, return true. If not, return false.
 ------------------------------------------------------------------------------------------------ */
 
 const hasNumber = (string) => {
-  // Solution code here...
+  let regex = /([A-Za-z][0-9])/;
+  return regex.test(string);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -149,7 +150,7 @@ describe('Testing challenge 3', () => {
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should return true if a string has one or more word characters followed by one or more digits', () => {
     expect(hasNumber('Hell0')).toBeTruthy();
     expect(hasNumber('Bob')).toBeFalsy();
