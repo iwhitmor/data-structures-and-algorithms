@@ -14,7 +14,9 @@ HINT: Look at the tests to see how the callback functions are used.
 ------------------------------------------------------------------------------------------------ */
 
 function upper(str) {
-  return str.toUpperCase();
+  let result = [];
+
+  return str.toUpperCase(result);
 }
 
 function lower(str) {
@@ -230,7 +232,7 @@ DO NOT CHANGE any of the below code.
 Run your tests from the console: jest challenges-03.test.js
 ------------------------------------------------------------------------------------------------ */
 
-xdescribe('Testing challenge 1', () => {
+describe('Testing challenge 1', () => {
   test('It should return an array of uppercase animal names', () => {
     const arr = ['BeAr', 'lIon'];
     expect(updateAnimal(arr, upper)[0]).toStrictEqual('BEAR');
