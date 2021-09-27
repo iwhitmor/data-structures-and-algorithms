@@ -37,15 +37,15 @@ For example: 'Cat' would come before 'apple'
 
 const sortNames = (name) => {
   name.sort((a, b) => {
-    if (a.name < b.name) {
+    if (a < b) {
       return -1;
     }
-    if (a.name > b.name) {
+    if (a > b) {
       return 1;
     }
-    return 0;
-  }
-  );
+    else return 0;
+  });
+  return name;
 };
 
 /* ------------------------------------------------------------------------------------------------
