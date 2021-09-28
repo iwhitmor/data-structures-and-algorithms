@@ -44,13 +44,14 @@ Write a function named addPurchases that, given an array of objects as input, us
 const addPurchases = (objects) => {
   let initialTotalPrice = 0;
   function priceReducer(totalPrice, product) {
+    console.log({ totalPrice, product });
     return totalPrice + product.purchasePrice;
   }
   return objects.reduce(priceReducer, initialTotalPrice);
 };
 
 /* ------------------------------------------------------------------------------------------------
-CHALLENGE 4
+CHALLENGE 4,
 
 Write a function named countNumberOfElements that, given an array as input, uses reduce to count the number of elements in the array.
 
@@ -58,10 +59,17 @@ Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
 const countNumberOfElements = (arr) => {
-  // Solution code here...
+  let initialCount = 0;
+  function elementReducer(count) {
+    return count + 1;
+  }
+  return arr.reduce(elementReducer, initialCount);
 };
 
-/* ------------------------------------------------------------------------------------------------
+/* 
+
+
+------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
 Write a function named returnNames that, given the Star Wars data, below, uses reduce to return an array containing the names of the characters.
@@ -312,7 +320,7 @@ describe('Testing challenge 3', () => {
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should return the length of the array', () => {
     expect(countNumberOfElements([1, 2, 3, 4, 5])).toStrictEqual(5);
   });
