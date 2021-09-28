@@ -129,7 +129,6 @@ let starWarsData = [{
 const returnNames = (arr) => {
   let initialNames = [];
   function namesReducer(names, character) {
-    console.log({ names, character });
     names.push(character.name);
     return names;
   }
