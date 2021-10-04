@@ -20,4 +20,8 @@ To run your tests
 
 ### 401 Data Structures, Code Challenges
 
-- Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+## Code Challenge Table of Contents
+
+- Arrays
+
+  - [Reverse an array](./c-sharp/DataStructures/CodeChallenges/array-reverse/README.md)
