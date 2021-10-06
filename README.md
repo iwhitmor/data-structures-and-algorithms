@@ -25,3 +25,7 @@ To run your tests
 - Arrays
 
   - [Reverse an array](./c-sharp/DataStructures/CodeChallenges/array-reverse/README.md)
+  
+  - [Insert to middle of an array](./c-sharp/DataStructures/CodeChallenges/array-insert-shift/README.md)
+  
+  - [Array Binary Search](./c-sharp/DataStructures/CodeChallenges/array-binary-search/README.md)
