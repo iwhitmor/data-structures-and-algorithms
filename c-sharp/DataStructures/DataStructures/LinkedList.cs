@@ -8,10 +8,10 @@ namespace DataStructures
   {
     public Node Head { get; set; }
 
-    public void Insert(int v)
+    public void Insert(int value)
     {
       Node newNode = new Node();
-      newNode.Value = v; 
+      newNode.Value = value; 
 
       Head = newNode;
     }
