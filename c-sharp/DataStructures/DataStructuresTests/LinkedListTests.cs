@@ -27,9 +27,11 @@ namespace DataStructuresTests
       LinkedList list = new LinkedList();
 
       //Act
-
+      list.Insert(1);
 
       //Assert
+      Assert.NotNull(list.Head);
+      Assert.Equal(1, list.Head.Value);
     }
   }
 }
