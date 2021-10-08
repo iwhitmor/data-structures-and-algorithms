@@ -30,8 +30,14 @@ namespace DataStructuresTests
       list.Insert(1);
 
       //Assert
+      //Make sure we have a head
       Assert.NotNull(list.Head);
+
+      //Make sure the Head node has the inserted value
       Assert.Equal(1, list.Head.Value);
+
+      //Make sure the Head node does not have a next
+      Assert.Null(list.Head.Next);
     }
   }
 }
