@@ -29,3 +29,7 @@ To run your tests
   - [Insert to middle of an array](./c-sharp/DataStructures/CodeChallenges/array-insert-shift/README.md)
   
   - [Array Binary Search](./c-sharp/DataStructures/CodeChallenges/array-binary-search/README.md)
+
+- Linked Lists
+
+  - [Implement a linked list](./c-sharp/DataStructures/CodeChallenges/linked-lists/README.md)
