@@ -18,24 +18,46 @@ namespace DataStructures
 
     public bool Includes(int valueToFind)
     {
-      //TODO:fishing me
-      //current = Head;
+      //TODO:fishing me, needs a traversal
 
-      //while (current ! = null)
-      //{
-      //  if current.value = value
-      //  {
-      //    return true;
-      //  }
+      Node current = Head;
 
-      return false;
-    }
+      while (current != null)
+
+      {
+        //Do something interesting with current
+        if (current.Value == valueToFind)
+
+        {
+          return true;
+        }
+
+        current = current.Next;
+      }
+        return false;
+     }
 
     //For now use override because Keith said so
     public override string ToString()
     {
       //TODO: Traverse to build the string
-      return "NULL";
+
+      string output = "";
+
+      Node current = Head;
+
+      while (current != null)
+
+      {
+        output += current.Value;
+        output += " -> ";
+
+
+        current = current.Next;
+      }
+
+
+      return output + "NULL";
     }
   }
 }
