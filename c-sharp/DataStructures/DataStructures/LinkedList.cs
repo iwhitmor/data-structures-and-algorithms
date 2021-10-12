@@ -64,17 +64,20 @@ namespace DataStructures
       //Create new node
       Node newNode = new Node();
       newNode.Value = value;
-      newNode.Next = Head;
-      Head = newNode;
-    
       Node current = Head;
 
-      //traverse the list, stop at last node
       while (current != null)
       {
-        current = current.Next;
+        if (current.Next == null)
+        {
+          current.Next = newNode;
+          break;
+        }
+        else
+        {
+          current = current.Next;
+        }
       }
-      current.Next = newNode;
-    }
+    } 
   }
 }
