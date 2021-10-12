@@ -67,7 +67,6 @@ namespace DataStructures
       newNode.Next = Head;
       Head = newNode;
     
-      //if head is null that is our new head
       Node current = Head;
 
       //traverse the list, stop at last node

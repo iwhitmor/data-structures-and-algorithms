@@ -109,19 +109,19 @@ namespace DataStructuresTests
 
   
     [Fact]
-    public void Append_node_end_of_list()
+    public void Append_node()
     {
       //Arrange
       LinkedList list = new LinkedList();
-      list.Insert(3);
       list.Insert(2);
       list.Insert(1);
 
       //Act
-      int result = 
+      list.Append(3);
 
       //Assert
-
+      Assert.Equal("1 -> 2 -> 3 -> NULL",
+        list.ToString());
     } 
   }
 }
