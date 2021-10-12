@@ -34,8 +34,9 @@ namespace DataStructures
 
         current = current.Next;
       }
-        return false;
-     }
+
+      return false;
+    }
 
     //For now use override because Keith said so
     public override string ToString()
@@ -52,12 +53,29 @@ namespace DataStructures
         output += current.Value;
         output += " -> ";
 
-
         current = current.Next;
       }
 
-
       return output + "NULL";
+    }
+
+    public void Append(int value)
+    {
+      //Create new node
+      Node newNode = new Node();
+      newNode.Value = value;
+      newNode.Next = Head;
+      Head = newNode;
+    
+      //if head is null that is our new head
+      Node current = Head;
+
+      //traverse the list, stop at last node
+      while (current != null)
+      {
+        current = current.Next;
+      }
+      current.Next = newNode;
     }
   }
 }
