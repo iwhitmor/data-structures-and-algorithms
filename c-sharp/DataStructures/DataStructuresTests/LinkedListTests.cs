@@ -107,17 +107,21 @@ namespace DataStructuresTests
       Assert.Equal("1 -> 2 -> 3 -> NULL", result);
     }
 
-    [Theory]
-    [InlineData(1, false)]
-    [InlineData(2, true)]
-    [InlineData(3, true)]
-
+  
+    [Fact]
     public void Append_node_end_of_list()
     {
       //Arrange
-      LinkedList List = new LinkedList();
-      list.insert = (2);
-      list.insert = (1);
+      LinkedList list = new LinkedList();
+      list.Insert(3);
+      list.Insert(2);
+      list.Insert(1);
+
+      //Act
+      int result = 
+
+      //Assert
+
     } 
   }
 }
