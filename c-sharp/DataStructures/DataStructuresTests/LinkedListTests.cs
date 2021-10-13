@@ -88,8 +88,6 @@ namespace DataStructuresTests
 
       //Assert
       Assert.Equal("NULL", result);
-
-      //TODO: add tests for ToString() with non-empty list
     }
 
     [Fact]
@@ -108,5 +106,22 @@ namespace DataStructuresTests
       //Assert
       Assert.Equal("1 -> 2 -> 3 -> NULL", result);
     }
+
+  
+    [Fact]
+    public void Append_node()
+    {
+      //Arrange
+      LinkedList list = new LinkedList();
+      list.Insert(2);
+      list.Insert(1);
+
+      //Act
+      list.Append(3);
+
+      //Assert
+      Assert.Equal("1 -> 2 -> 3 -> NULL",
+        list.ToString());
+    } 
   }
 }
