@@ -98,7 +98,6 @@ namespace DataStructures
 
         current = current.Next;
         return current.Value;
-    }
-    
+    }    
   }
 }
