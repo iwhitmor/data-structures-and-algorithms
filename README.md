@@ -32,7 +32,7 @@ To run your tests
 
 - Linked Lists
 
-  - [Implement a linked list](./c-sharp/DataStructures/CodeChallenges/401/linked-lists/README.md)
+  - [Implement a linked list](./c-sharp/DataStructures/CodeChallenges/401/linked-list-insertions/README.md)
 
   - [Linked List Kth to the end](./c-sharp/DataStructures/CodeChallenges/401/linked-list-kth/README.md)
 
