@@ -5,8 +5,10 @@ namespace CodeChallenges
 {
   public class LinkedLists
   {
-    public static void LinkedLlistChallengeO1()
+    public static void ZippedLists(LinkedList LL1, LinkedList LL2)
     {
+      
+      
     }
   }
 }

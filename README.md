@@ -24,12 +24,16 @@ To run your tests
 
 - Arrays
 
-  - [Reverse an array](./c-sharp/DataStructures/CodeChallenges/array-reverse/README.md)
+  - [Reverse an array](./c-sharp/DataStructures/CodeChallenges/401/array-reverse/README.md)
   
-  - [Insert to middle of an array](./c-sharp/DataStructures/CodeChallenges/array-insert-shift/README.md)
+  - [Insert to middle of an array](./c-sharp/DataStructures/CodeChallenges/401/array-insert-shift/README.md)
   
-  - [Array Binary Search](./c-sharp/DataStructures/CodeChallenges/array-binary-search/README.md)
+  - [Array Binary Search](./c-sharp/DataStructures/CodeChallenges/401/array-binary-search/README.md)
 
 - Linked Lists
 
-  - [Implement a linked list](./c-sharp/DataStructures/CodeChallenges/linked-lists/README.md)
+  - [Implement a linked list](./c-sharp/DataStructures/CodeChallenges/401/linked-lists/README.md)
+
+  - [Linked List Kth to the end](./c-sharp/DataStructures/CodeChallenges/401/linked-list-kth/README.md)
+
+  - [Link List Zipper](./c-sharp/DataStructures/CodeChallenges/401/linked-list-zip/README.md)
