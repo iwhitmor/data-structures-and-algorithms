@@ -6,12 +6,9 @@ namespace DataStructures
     public static void Main(string[] args) 
     {
       LinkedList ll = new LinkedList();
-      ll.Insert(42);
+      ll.KthFromEnd(2);
 
       Console.WriteLine(ll);
-
-      int[] arr = new int[] { 1, 2, 3 };
-      Console.WriteLine(arr);
     }
   }
 }

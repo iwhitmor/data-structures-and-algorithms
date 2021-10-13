@@ -98,7 +98,7 @@ namespace DataStructuresTests
       list.Insert(3);
       list.Insert(2);
       list.Insert(1);
-     
+
 
       //Act
       string result = list.ToString();
@@ -107,7 +107,7 @@ namespace DataStructuresTests
       Assert.Equal("1 -> 2 -> 3 -> NULL", result);
     }
 
-  
+
     [Fact]
     public void Append_node()
     {
@@ -122,6 +122,23 @@ namespace DataStructuresTests
       //Assert
       Assert.Equal("1 -> 2 -> 3 -> NULL",
         list.ToString());
-    } 
+    }
+
+    [Fact]
+    public void Kth_to_the_end_works()
+    {
+      //Arrange
+      LinkedList list = new LinkedList();
+      list.Insert(13);
+      list.Insert(12);
+      list.Insert(11);
+
+      //Act
+      int result = list.KthFromEnd(2);
+
+      //Assert
+      Assert.Equal(12, result);
+    }
   }
 }
+
