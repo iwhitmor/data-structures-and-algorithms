@@ -138,7 +138,7 @@ namespace DataStructuresTests
       list.KthFromEnd(2);
 
       //Assert
-      Assert.Equal("12",
+      Assert.Equal("13",
         list.ToString());
     }
   }
