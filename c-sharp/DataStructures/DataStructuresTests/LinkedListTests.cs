@@ -129,17 +129,16 @@ namespace DataStructuresTests
     {
       //Arrange
       LinkedList list = new LinkedList();
-      list.Insert(14);
       list.Insert(13);
       list.Insert(12);
       list.Insert(11);
 
       //Act
-      list.KthFromEnd(2);
+      int result = list.KthFromEnd(2);
 
       //Assert
-      Assert.Equal("13",
-        list.ToString());
+      Assert.Equal(12, result);
     }
   }
 }
+

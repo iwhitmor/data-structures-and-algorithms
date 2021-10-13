@@ -80,7 +80,7 @@ namespace DataStructures
       }
     }
 
-    public void KthFromEnd(int k)
+    public int KthFromEnd(int k)
     {
       int length = 0;
 
@@ -96,7 +96,9 @@ namespace DataStructures
 
       for (int i = 0; i < length - k; i++)
 
-        current = current.Next;    
+        current = current.Next;
+        return current.Value;
     }
+    
   }
 }
