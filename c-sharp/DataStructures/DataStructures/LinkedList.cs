@@ -1,10 +1,11 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
 namespace DataStructures
 {
-  public class LinkedList
+  public class LinkedList : IEnumerable<int>
   {
     public Node Head { get; set; }
 
@@ -95,9 +96,28 @@ namespace DataStructures
       current = Head;
 
       for (int i = 0; i < length - k; i++)
-
+      
         current = current.Next;
-        return current.Value;
-    }    
+        return current.Value;  
+    }
+
+    public IEnumerator<int> GetEnumerator()
+    {
+      Node current = Head;
+      
+      while (current != null)
+      {
+        //Include this value in our sequence
+        yield return current.Value;
+
+        //Move to next node
+        current = current.Next;
+      }
+    }
+
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+      return GetEnumerator();
+    }
   }
 }

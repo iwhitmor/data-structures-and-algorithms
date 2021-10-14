@@ -1,16 +1,25 @@
 using System;
 using CodeChallenges;
+using DataStructures;
 using Xunit;
 
 namespace CodeChallengesTests
 {
-  public class UnitTest1
+  public class LinkedLlistCodeChallengeTests
   {
     [Fact]
-    public void Test1()
+    public void ZipTwoLists_with_two_empty_lists()
     {
-      LinkedLists.LinkedLlistChallengeO1();
-      Assert.Equal(true, true);
+      //Arrange
+      LinkedList list1 = new LinkedList();
+
+      LinkedList list2 = new LinkedList();
+
+      //Act
+      LinkedList result = LinkedListChallenges.ZipTwoLists(list1, list2);
+
+      //Assert
+      Assert.Empty(result);
     }
   }
 }
