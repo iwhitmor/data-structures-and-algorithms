@@ -109,5 +109,24 @@ namespace DataStructuresTests
       //Assert
       Assert.True(stack.IsEmpty);
     }
+
+    [Fact]
+    public void Peek_should_throw_when_empty()
+    {
+      //Arrange
+      Stack stack = new Stack();
+
+      //Assert
+      Assert.Throws<InvalidOperationException>(() =>
+      {
+
+        //Act
+        stack.Peek();
+
+      });
+
+
+
+    }
   }
 }

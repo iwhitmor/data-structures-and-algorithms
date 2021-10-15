@@ -16,7 +16,11 @@ namespace DataStructures
 
     public int Peek()
     {
-      return top.Value;
+      if (top == null)
+      {
+        throw new InvalidOperationException();
+      }
+        else return top.Value;
     }
 
     public int Pop()
