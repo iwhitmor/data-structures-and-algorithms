@@ -60,7 +60,54 @@ namespace DataStructuresTests
 
       //Assert
       Assert.Equal(1, result);
+    }
 
+    [Fact]
+    public void Can_pop_off_stack()
+    {
+      //Arrange
+      Stack stack = new Stack();
+      stack.Push(1);
+
+      //Act
+      int result = stack.Pop();
+
+      //Assert
+      Assert.Equal(1, result);
+      Assert.True(stack.IsEmpty);
+    }
+
+    [Fact]
+    public void Pop_works_for_stack_with_multiple_values()
+    {
+      //Arrange
+      Stack stack = new Stack();
+      stack.Push(1);
+      stack.Push(2);
+
+      //Act
+      int result = stack.Pop();
+
+      //Assert
+      Assert.Equal(2, result);
+      Assert.Equal(1, stack.Peek());
+      Assert.False(stack.IsEmpty);
+    }
+
+    [Fact]
+    public void Can_empty_stack_after_multiple_pops()
+    {
+      //Arrange
+      Stack stack = new Stack();
+      stack.Push(1);
+      stack.Push(2);
+
+      //Act
+      stack.Pop();
+      stack.Pop();
+
+      //Assert
+      Assert.True(stack.IsEmpty);
     }
   }
 }

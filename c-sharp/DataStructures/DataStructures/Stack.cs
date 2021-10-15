@@ -18,5 +18,14 @@ namespace DataStructures
     {
       return top.Value;
     }
+
+    public int Pop()
+    {
+      Node temp = top;
+      top = top.Next;
+      temp.Next = null;
+
+      return temp.Value;
+    }
   }
 }
