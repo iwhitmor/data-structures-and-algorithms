@@ -18,6 +18,8 @@ namespace DataStructuresTests
 
       //Assert
       Assert.Null(head);
+
+      Assert.Empty(list);
     }
 
     [Fact]
@@ -30,6 +32,8 @@ namespace DataStructuresTests
       list.Insert(1);
 
       //Assert
+
+
       //Make sure we have a head
       Assert.NotNull(list.Head);
 
@@ -51,6 +55,8 @@ namespace DataStructuresTests
       list.Insert(3);
 
       //Assert
+      Assert.Equal(new[] { 3, 5 }, list);
+
       Assert.NotNull(list.Head);
       Assert.Equal(3, list.Head.Value);
       Assert.NotNull(list.Head.Next);

@@ -3,10 +3,15 @@ using DataStructures;
 
 namespace CodeChallenges
 {
-  public class LinkedLists
+  public static class LinkedListChallenges
   {
-    public static void LinkedLlistChallengeO1()
+    public static LinkedList ZipTwoLists(LinkedList list1, LinkedList list2)
     {
+      if (list1.Head == null)
+        return list2;
+
+      return list1;
+
     }
   }
 }
