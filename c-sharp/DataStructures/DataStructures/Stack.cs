@@ -13,5 +13,10 @@ namespace DataStructures
       node.Next = top;
       top = node;
     }
+
+    public int Peek()
+    {
+      return top.Value;
+    }
   }
 }

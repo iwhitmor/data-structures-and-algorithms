@@ -48,6 +48,19 @@ namespace DataStructuresTests
       Assert.False(stack.IsEmpty);
     }
 
+    [Fact]
+    public void Can_peek_next_item_on_stack()
+    {
+      //Arrange
+      Stack stack = new Stack();
+      stack.Push(1);
 
+      //Act
+      int result = stack.Peek();
+
+      //Assert
+      Assert.Equal(1, result);
+
+    }
   }
 }
