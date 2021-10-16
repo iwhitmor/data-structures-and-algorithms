@@ -6,9 +6,10 @@ namespace DataStructures
     private Node front;
     private Node rear;
 
-    public bool IsEmpty => front == null;
+    public bool IsEmptyF => front == null;
+    public bool IsEmptyR => rear == null;
 
-    public void enqueue(int value)
+    public void Enqueue(int value)
     {
       Node node = new Node(value);
       rear.Next = node;

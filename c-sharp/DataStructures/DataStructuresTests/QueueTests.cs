@@ -14,11 +14,24 @@ namespace DataStructuresTests
       Queue queue = new Queue();
 
       //Act
-      bool result = queue.IsEmpty;
+      bool result = queue.IsEmptyF;
 
       //Assert
       Assert.True(result);
 
+    }
+
+    [Fact]
+    public void Can_enqueue_into_queue()
+    {
+      //Arrange
+      Queue queue = new Queue();
+
+      //Act
+      queue.Enqueue(1);
+
+      //Assert
+      Assert.False(queue.IsEmptyR);
     }
   }
 }
