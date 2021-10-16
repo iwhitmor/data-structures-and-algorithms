@@ -6,6 +6,19 @@ namespace DataStructuresTests
 {
   public class QueueTests
   {
-    
+
+    [Fact]
+    public void Can_instantiate_an_empty_queue()
+    {
+      //Arrange
+      Queue queue = new Queue();
+
+      //Act
+      bool result = queue.IsEmpty;
+
+      //Assert
+      Assert.True(result);
+
+    }
   }
 }
