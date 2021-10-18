@@ -67,7 +67,16 @@ namespace DataStructuresTests
     [Fact]
     public void Can_dequeue_out_of_queue_the_expected_value()
     {
+      //Arrange
+      Queue queue = new Queue();
+      queue.Enqueue(1);
 
+      //Act
+      int result = queue.Dequeue();
+
+      //Assert
+      Assert.Equal(1, result);
+      Assert.True(queue.IsEmpty);
     }
   }
 }
