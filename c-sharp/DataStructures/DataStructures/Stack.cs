@@ -14,6 +14,11 @@ namespace DataStructures
       top = node;
     }
 
+    public void push(int value)
+    {
+      throw new NotImplementedException();
+    }
+
     public int Peek()
     {
       if (top == null)
