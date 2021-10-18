@@ -37,3 +37,7 @@ To run your tests
   - [Linked List Kth to the end](./c-sharp/DataStructures/CodeChallenges/401/linked-list-kth/README.md)
 
   - [Link List Zipper](./c-sharp/DataStructures/CodeChallenges/401/linked-list-zip/README.md)
+
+- Stack and Queue
+
+  - [Implement a Queue using two stacks](./c-sharp/DataStructures/CodeChallenges/401/stack-queue-pseudo/README.md)
