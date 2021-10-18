@@ -25,5 +25,14 @@ namespace DataStructures
         rear.Next = node;
       }
     }
+
+    public int Peek()
+    {
+      if (front == null)
+      {
+        throw new InvalidOperationException();
+      }
+      else return front.Value;
+    }
   }
 }

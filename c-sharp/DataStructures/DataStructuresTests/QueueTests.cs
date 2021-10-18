@@ -33,5 +33,19 @@ namespace DataStructuresTests
       //Assert
       Assert.False(queue.IsEmpty);
     }
+
+    [Fact]
+    public void Can_peek_at_next_queue_line()
+    {
+      //Arrange
+      Queue queue = new Queue();
+      queue.Enqueue(1);
+
+      //Act
+      int result = queue.Peek();
+
+      //Assert
+      Assert.Equal(1, result);
+    }
   }
 }
