@@ -35,6 +35,20 @@ namespace DataStructuresTests
     }
 
     [Fact]
+    public void Can_enqueue_multiple_values_into_queue()
+    {
+      //Arrange
+      Queue queue = new Queue();
+      queue.Enqueue(1);
+
+      //Act
+      queue.Enqueue(2);
+
+      //Assert
+      Assert.False(queue.IsEmpty);
+    }
+
+    [Fact]
     public void Can_peek_at_next_queue_line()
     {
       //Arrange
