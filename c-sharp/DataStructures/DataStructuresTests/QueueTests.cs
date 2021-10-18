@@ -14,7 +14,7 @@ namespace DataStructuresTests
       Queue queue = new Queue();
 
       //Act
-      bool result = queue.IsEmptyF;
+      bool result = queue.IsEmpty;
 
       //Assert
       Assert.True(result);
@@ -31,7 +31,7 @@ namespace DataStructuresTests
       queue.Enqueue(1);
 
       //Assert
-      Assert.False(queue.IsEmptyR);
+      Assert.False(queue.IsEmpty);
     }
   }
 }
