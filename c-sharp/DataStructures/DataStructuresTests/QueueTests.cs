@@ -92,5 +92,21 @@ namespace DataStructuresTests
       Assert.Equal(1, result);
       Assert.True(queue.IsEmpty);
     }
+
+    [Fact]
+    public void Can_empty_a_queue_after_multiple_dequeues()
+    {
+      //Arrange
+      Queue queue = new Queue();
+      queue.Enqueue(1);
+      queue.Enqueue(2);
+
+      //Act
+      queue.Dequeue();
+      queue.Dequeue();
+
+      //Assert
+      Assert.True(queue.IsEmpty);
+    }
   }
 }
