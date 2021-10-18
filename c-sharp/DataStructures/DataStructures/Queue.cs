@@ -34,5 +34,14 @@ namespace DataStructures
       }
       else return front.Value;
     }
+
+    public int Dequeue()
+    {
+      Node temp = front;
+      front = front.next;
+      temp.Next = null;
+
+      return temp.Value;
+    }
   }
 }

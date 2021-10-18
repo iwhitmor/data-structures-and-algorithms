@@ -47,5 +47,27 @@ namespace DataStructuresTests
       //Assert
       Assert.Equal(1, result);
     }
+
+    [Fact]
+    public void Peek_should_throw_when_empty()
+    {
+      //Arrange
+      Queue queue = new Queue();
+
+
+      //Assert
+      Assert.Throws<InvalidOperationException>(() =>
+      {
+        //Act
+        queue.Peek();
+
+      });
+    }
+
+    [Fact]
+    public void Can_dequeue_out_of_queue_the_expected_value()
+    {
+
+    }
   }
 }
