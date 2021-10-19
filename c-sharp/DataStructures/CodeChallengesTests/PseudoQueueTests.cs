@@ -61,5 +61,22 @@ namespace CodeChallengesTests
       //Assert
       Assert.Equal(1, result);
     }
+
+    [Fact]
+    public void Queue_can_enqueue_and_dequeue_a_bunch_of_stuff()
+    {
+      Queue queue = new Queue();
+
+      queue.Enqueue(1);
+      Assert.Equal(1, queue.Peek());
+
+      queue.Enqueue(2);
+      Assert.Equal(1, queue.Peek());
+
+      queue.Enqueue(3);
+      Assert.Equal(1, queue.Peek());
+
+      Assert.Equal(1, queue.Dequeue());
+    }
   }
 }
