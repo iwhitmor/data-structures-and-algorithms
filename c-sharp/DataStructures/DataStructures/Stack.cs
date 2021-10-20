@@ -21,6 +21,7 @@ namespace DataStructures
 
     public int Peek()
     {
+
       if (top == null)
       {
         throw new InvalidOperationException();
