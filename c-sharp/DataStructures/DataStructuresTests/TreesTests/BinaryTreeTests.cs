@@ -7,8 +7,7 @@ namespace DataStructuresTests.TreesTests
   public class BinaryTreeTests
   {
     [Fact]
-
-    public void Binary_tree_is_empty()
+    public void Tree_is_empty()
     {
       //Arrange
       BinaryTree<int> t = new BinaryTree<int>();
@@ -19,6 +18,21 @@ namespace DataStructuresTests.TreesTests
 
       //Assert
       Assert.True(result);
+    }
+
+    [Fact]
+    public void Can_instantiate_tree_with_single_root_node()
+    {
+      //Arrange
+      BinaryTree<int> t = new BinaryTree<int>();
+      t.Root = new Node<int>(1);
+
+      //Act
+      IEnumerable<int> result = t.PreOrder();
+
+
+      //Assert
+      Assert.Equal(new[] { 1 }, result);
     }
 
 
