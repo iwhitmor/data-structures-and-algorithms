@@ -5,4 +5,10 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Trees\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Trees\" />
+  </ItemGroup>
 </Project>
