@@ -7,6 +7,8 @@ namespace DataStructures.Trees
   {
     public Node<T> Root { get; set; }
 
+    public bool IsEmpty => Root == null;
+
     public IEnumerable<T> PreOrder()
 
     {
@@ -28,23 +30,25 @@ namespace DataStructures.Trees
         PreOrder(root.Right);
       }
     }
-  }
 
-    //public IEnumerable<T> InOrder(Node<T> Root)
-    //{
-    //  if (Root.Left != null)
-    //  {
-    //    InOrder(Root.Left);
-    //  }
+    public IEnumerable<T> InOrder()
+    {
+      return InOrder(Root);
+    }
 
-    //  T output = Root.Value;
+    private IEnumerable<T> InOrder(Node<T> root)
+    {
+      if (root.Left != null)
+      {
+        InOrder(root.Left);
+      }
 
-    //  if (Root.Right != null)
-    //  {
-    //    InOrder(Root.Right);
-    //  }
-    //  return output;
+      yield return root.Value;
 
-    //}
+      if (root.Right != null)
+      {
+        InOrder(root.Right);
+      }
+    }
   }
 }
