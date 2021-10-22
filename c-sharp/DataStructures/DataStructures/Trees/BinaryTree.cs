@@ -50,5 +50,25 @@ namespace DataStructures.Trees
         InOrder(root.Right);
       }
     }
+
+    public IEnumerable<T> PostOrder()
+    {
+      return PostOrder(Root);
+    }
+
+    private IEnumerable<T> PostOrder(Node<T> root)
+    {
+      if (root.Left != null)
+      {
+        PostOrder(root.Left);
+      }
+
+      if (root.Right != null)
+      {
+        PostOrder(root.Right);
+      }
+
+      yield return root.Value;
+    }
   }
 }
