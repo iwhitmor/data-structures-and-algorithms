@@ -22,12 +22,19 @@ namespace DataStructures.Trees
 
       if (root.Left != null)
       {
-        PreOrder(root.Left);
+        var leftValues = PreOrder(root.Left);
+        foreach (T leftValue in leftValues)
+        {
+          yield return leftValue;
+        }
       }
 
       if (root.Right != null)
       {
-        PreOrder(root.Right);
+        foreach (T rightValue in PreOrder(root.Right))
+        {
+          yield return rightValue;
+        }
       }
     }
 

@@ -11,8 +11,7 @@ namespace DataStructuresTests.TreesTests
     {
       //Arrange
       BinaryTree<int> t = new BinaryTree<int>();
-      //t.Root = new Node<int>(1);
-
+     
       //Act
       bool result = t.IsEmpty;
 
@@ -35,6 +34,20 @@ namespace DataStructuresTests.TreesTests
       Assert.Equal(new[] { 1 }, result);
     }
 
+    [Fact]
+    public void Can_add_left_child_and_right_child_to_root_node()
+    {
+      //Arrange
+      BinaryTree<int> t = new BinaryTree<int>();
+      t.Root = new Node<int>(1);
+      t.Root.Left = new Node<int>(2);
+      t.Root.Right = new Node<int>(3);
 
+      //Act
+      IEnumerable<int> result = t.PreOrder();
+
+      //Assert
+      Assert.Equal(new[] { 1, 2, 3 }, result);
+    }
   }
 }
