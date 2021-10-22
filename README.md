@@ -41,3 +41,5 @@ To run your tests
 - Stack and Queue
 
   - [Implement a Queue using two stacks](./c-sharp/DataStructures/CodeChallenges/401/stack-queue-pseudo/README.md)
+
+  - [Stack - Queue : Animal Shelter](./c-sharp/DataStructures/CodeChallenges/401/stack-queue-animal-shelter/README.md)
