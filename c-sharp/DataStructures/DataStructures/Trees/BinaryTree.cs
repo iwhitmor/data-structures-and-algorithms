@@ -47,14 +47,20 @@ namespace DataStructures.Trees
     {
       if (root.Left != null)
       {
-        InOrder(root.Left);
+        foreach (T leftValue in InOrder(root.Left))
+        {
+          yield return leftValue;
+        }
       }
 
       yield return root.Value;
 
       if (root.Right != null)
       {
-        InOrder(root.Right);
+        foreach (T rightValue in InOrder(root.Right))
+        {
+          yield return rightValue;
+        }
       }
     }
 
@@ -67,12 +73,18 @@ namespace DataStructures.Trees
     {
       if (root.Left != null)
       {
-        PostOrder(root.Left);
+        foreach (T leftValue in InOrder(root.Left))
+        {
+          yield return leftValue;
+        }
       }
 
       if (root.Right != null)
       {
-        PostOrder(root.Right);
+        foreach (T rightValue in InOrder(root.Right))
+        {
+          yield return rightValue;
+        }
       }
 
       yield return root.Value;
