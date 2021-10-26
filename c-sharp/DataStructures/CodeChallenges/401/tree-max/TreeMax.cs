@@ -9,7 +9,16 @@ namespace DataStructures.Trees
   { 
     public int FindMax(BinaryTree<int> tree)
     {
-      return tree.PreOrder().Max();
+      //Cant use this built in method
+      //return tree.PreOrder().Max();
+
+      int max = tree.Root.Value;
+
+      foreach (var i in tree.PreOrder())
+      {
+        if (i > max) max = i;
+      }
+      return max;
     }   
   }
 }
