@@ -7,7 +7,7 @@ namespace DataStructures.Trees
 {
   public class TreeMax
   { 
-    public int FindMax(BinaryTree<int> tree)
+    public static int FindMax(BinaryTree<int> tree)
     {
       //Cant use this built in method
       //return tree.PreOrder().Max();
