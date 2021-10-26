@@ -14,7 +14,7 @@ namespace DataStructures.Trees
 
       int max = tree.Root.Value;
 
-      foreach (var i in tree.PreOrder())
+      foreach (int i in tree.PreOrder())
       {
         if (i > max) max = i;
       }
