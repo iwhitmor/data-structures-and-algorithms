@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using DataStructures.Trees;
 
 namespace DataStructures.Trees
@@ -8,11 +9,7 @@ namespace DataStructures.Trees
   { 
     public int FindMax(BinaryTree<int> tree)
     {
-
-
-      tree.PreOrder();
-      return 
-     
+      return tree.PreOrder().Max();
     }   
   }
 }
