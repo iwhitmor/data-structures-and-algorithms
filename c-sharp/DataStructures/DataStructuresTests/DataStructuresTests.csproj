@@ -22,4 +22,10 @@
   <ItemGroup>
     <ProjectReference Include="..\DataStructures\DataStructures.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="TreesTests\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TreesTests\" />
+  </ItemGroup>
 </Project>

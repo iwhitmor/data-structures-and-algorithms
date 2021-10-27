@@ -8,4 +8,10 @@
   <ItemGroup>
     <ProjectReference Include="..\DataStructures\DataStructures.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="401\tree-max\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="401\tree-max\" />
+  </ItemGroup>
 </Project>
