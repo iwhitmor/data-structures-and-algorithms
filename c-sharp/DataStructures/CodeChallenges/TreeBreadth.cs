@@ -4,6 +4,7 @@ using System.Linq;
 using DataStructures.Trees;
 using DataStructures;
 
+
 namespace CodeChallenges
 {
   public class TreeBreadth
@@ -17,23 +18,23 @@ namespace CodeChallenges
 
         yield break;
 
-      breadth.Enqueue(tree.Root);
+      breadth.Enqueue(tree.Root.Value);
 
       while (!breadth.IsEmpty)
       {
-        Node front = breadth.Dequeue(); 
+        node front = breadth.Dequeue(); 
       }
 
       yield return front.value;
 
-      if (Front.left != null)
+      if (front.left != null)
       {
-        breadth.Enqueue(int front.left);
+        breadth.Enqueue(front.left);
       }
 
-      if (Front.right != null)
+      if (front.right != null)
       {
-        breadth.Enqueue(Front.right);
+        breadth.Enqueue(front.right);
       }
     }
   }
