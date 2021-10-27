@@ -9,32 +9,29 @@ namespace CodeChallenges
 {
   public class TreeBreadth
   {
-    public static IEnumerable<int> BreadthFirst(BinaryTree<int> tree)
+    public static IEnumerable<T> BreadthFirst<T>(BinaryTree<T> tree)
     {
 
-      Queue breadth = new Queue();
+      Queue<Node<T>> q = new Queue<Node<T>>();
 
       if (tree.Root == null)
 
         yield break;
 
-      breadth.Enqueue(tree.Root.Value);
+      q.Enqueue(tree.Root);
 
-      while (!breadth.IsEmpty)
+      while (q.Count > 0)
       {
-        node front = breadth.Dequeue(); 
-      }
+        Node<T> next = q.Dequeue();
+        yield return next.Value;
 
-      yield return front.value;
+        if (next.Left != null)
 
-      if (front.left != null)
-      {
-        breadth.Enqueue(front.left);
-      }
+          q.Enqueue(next.Left);
 
-      if (front.right != null)
-      {
-        breadth.Enqueue(front.right);
+        if (next.Right != null)
+
+          q.Enqueue(next.Right);
       }
     }
   }
