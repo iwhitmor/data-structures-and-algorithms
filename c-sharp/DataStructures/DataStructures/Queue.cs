@@ -1,4 +1,6 @@
 using System;
+using DataStructures.Trees;
+
 namespace DataStructures
 {
   public class Queue
