@@ -8,37 +8,21 @@ namespace CodeChallenges
 {
   public class TreeFizzBuzz
   {
-   public static BinaryTree<string> FizzBuzz(BinaryTree<int> numberTree)
+   public static BinaryTree<string> FizzBuzz(BinaryTree<int> tree)
    {
-     BinaryTree<string> result = new BinaryTree<string>();
+      Node<string> FizzBuzz(Node<int> node)
+      {
+        if (node % 3 == 0)
+        {
+          return "Fizz";
+        }
+      }
 
-      //if (numberTree.Root == null)
+      BinaryTree<string> r = new BinaryTree<string>();
 
-      //  yield break;
+      r.Root = FizzBuzz(tree.Root);
 
-      //foreach (int node in numberTree.PreOrder())
-      //{
-
-      //  if (node % 3 == 0)
-      //  {
-      //    return ("Fizz");
-      //  }
-
-      //  else if (node % 5 == 0)
-      //  {
-      //    return ("Buzz");
-      //  }
-
-      //  else if (node % 3 == 0 && node % 5 == 0)
-      //  {
-      //    return ("FizzBuzz");
-      //  }
-
-      //  else return node;  
-      //  }
-
-      //yield return result;
-
+      return r;
     }
   }
 }
