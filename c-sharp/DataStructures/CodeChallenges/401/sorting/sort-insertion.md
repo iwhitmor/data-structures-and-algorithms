@@ -12,17 +12,25 @@
 
 * Pseudo Code
 
-  * ```InsertionSort(int[] arr)```
+  * InsertionSort(int[] arr)
 
-    ```FOR i = 1 to arr.length```
+    FOR i = 1 to arr.length
 
-      ```int j <-- i - 1```
-      ```int temp <-- arr[i]```
+    int j <-- i - 1
+    int temp <-- arr[i]
 
-      ```WHILE j >= 0 AND temp < arr[j]```
-        ```arr[j + 1] <-- arr[j]```
-        ```j <-- j - 1```
+    WHILE j >= 0 AND temp < arr[j]
+    arr[j + 1] <-- arr[j]
+    j <-- j - 1
 
-      ```arr[j + 1] <-- temp```
+    arr[j + 1] <-- temp
 
-## Solution
+## Solution/Trace
+
+## Efficency
+
+* Time: O(n^2)
+
+* Space: O(1)
+
+  * No additional space is being created. The array is being sorted in place
