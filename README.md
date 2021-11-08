@@ -40,6 +40,14 @@ To run your tests
 
 - Stack and Queue
 
-  - [Implement a Queue using two stacks](./c-sharp/DataStructures/CodeChallenges/401/stack-queue-pseudo/README.md)
+  - [PseudoQueue using two stacks](./c-sharp/DataStructures/CodeChallenges/401/stack-queue-pseudo/README.md)
 
   - [Stack - Queue : Animal Shelter](./c-sharp/DataStructures/CodeChallenges/401/stack-queue-animal-shelter/README.md)
+
+  - [Stack - Queue : Brackets](./c-sharp/DataStructures/CodeChallenges/401/stack-queue-brackets/README.md)
+
+- Trees
+
+  - [Tree Max Value](./c-sharp/DataStructures/CodeChallenges/401/tree-max/README.md)
+
+  - [Tree Breadth First](./c-sharp/DataStructures/CodeChallenges/401/tree-breadth-first/README.md)
