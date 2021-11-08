@@ -27,7 +27,11 @@
 
 ## Solution/Trace
 
-## Efficency
+* Walkthrough of different steps in the sort
+
+[whiteboard](sort-insertion.jpg)
+
+## Efficiency
 
 * Time: O(n^2)
 
