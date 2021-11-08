@@ -6,36 +6,36 @@ using DataStructures;
 
 namespace CodeChallenges
 {
-  public class TreeFizzBuzz
-  {
-    public static BinaryTree<string> Select<TSource, TResult>(
-      BinaryTree<TSource> tree,
-      Func<TSource, TResult> mapper)
+  //public class TreeFizzBuzz
+  //{
+  //  public static BinaryTree<string> Select<TSource, TResult>(
+  //    BinaryTree<TSource> tree,
+  //    Func<TSource, TResult> mapper)
 
-      => new BinaryTree<string> {
+  //    => new BinaryTree<string> {
 
-        Root = MapTree(tree.Root, mapper)
+  //      Root = MapTree(tree.Root, mapper)
 
-      };
+  //    };
 
-      Node<TResult> MapTree(Node<TSource> node,
-        Func<TSource, TResult> mapper)
-      {
+  //    Node<TResult> MapTree(Node<TSource> node,
+  //      Func<TSource, TResult> mapper)
+  //    {
 
-      if (node == null)
-        return null;
+  //    if (node == null)
+  //      return null;
 
-      Node<TResult> newNode = new Node<TResult>();
+  //    Node<TResult> newNode = new Node<TResult>();
 
-        newNode.Value = MapTree(node.Value);
+  //      newNode.Value = MapTree(node.Value);
 
-        newNode.Left = MapTree(node.Left);
+  //      newNode.Left = MapTree(node.Left);
 
-        newNode.Right = MapTree(node.Right);
+  //      newNode.Right = MapTree(node.Right);
 
-        return newNode;
-      }
+  //      return newNode;
+  //    }
 
-    BinaryTree<string> FizzBuzz(BinaryTree<int> tree) => Select(tree, n => FizzBuzz(n));
-  }
+  //  BinaryTree<string> FizzBuzz(BinaryTree<int> tree) => Select(tree, n => FizzBuzz(n));
+  //}
 }
