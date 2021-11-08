@@ -11,11 +11,10 @@
   <ItemGroup>
     <None Remove="401\tree-max\" />
     <None Remove="401\sort\" />
-    <None Remove="401\sort\sort-insertion\" />
+    <None Remove="sorting\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="401\tree-max\" />
-    <Folder Include="401\sort\" />
-    <Folder Include="401\sort\sort-insertion\" />
+    <Folder Include="sorting\" />
   </ItemGroup>
 </Project>
