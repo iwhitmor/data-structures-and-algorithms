@@ -8,21 +8,34 @@ namespace CodeChallenges
 {
   public class TreeFizzBuzz
   {
-   public static BinaryTree<string> FizzBuzz(BinaryTree<int> tree)
-   {
-      Node<string> FizzBuzz(Node<int> node)
+    public static BinaryTree<string> Select<TSource, TResult>(
+      BinaryTree<TSource> tree,
+      Func<TSource, TResult> mapper)
+
+      => new BinaryTree<string> {
+
+        Root = MapTree(tree.Root, mapper)
+
+      };
+
+      Node<TResult> MapTree(Node<TSource> node,
+        Func<TSource, TResult> mapper)
       {
-        if (node % 3 == 0)
-        {
-          return "Fizz";
-        }
+
+      if (node == null)
+        return null;
+
+      Node<TResult> newNode = new Node<TResult>();
+
+        newNode.Value = MapTree(node.Value);
+
+        newNode.Left = MapTree(node.Left);
+
+        newNode.Right = MapTree(node.Right);
+
+        return newNode;
       }
 
-      BinaryTree<string> r = new BinaryTree<string>();
-
-      r.Root = FizzBuzz(tree.Root);
-
-      return r;
-    }
+    BinaryTree<string> FizzBuzz(BinaryTree<int> tree) => Select(tree, n => FizzBuzz(n));
   }
 }
