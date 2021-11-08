@@ -3,10 +3,10 @@ namespace CodeChallenges.sorting
 {
   public class SortChallenges
   {
-    public void sort(int[] arr)
+    public static void Sort(int[] arr)
     {
 
-      for (int i = 1; i < arr.length, i++)
+      for (int i = 1; i < arr.Length; i++)
 
       {
 
@@ -18,12 +18,12 @@ namespace CodeChallenges.sorting
 
         {
 
-          arr[j + 1] = arr[j]
+          arr[j + 1] = arr[j];
             j = j - 1;
 
         }
 
-        arr[j + 1] == temp;
+        arr[j + 1] = temp;
 
       }
     }
