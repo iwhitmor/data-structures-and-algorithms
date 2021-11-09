@@ -20,7 +20,7 @@ namespace CodeChallengesTests
       arr[5] = 15;
 
       //Act
-      SortChallenges.Sort(arr);
+      SortChallenges.SortInsertion(arr);
 
       //Assert
         Assert.Equal(new[] { 4, 8, 15, 16, 23, 42 }, arr);
