@@ -29,7 +29,7 @@
 
 * Walkthrough of different steps in the sort
 
-[whiteboard](sort-insertion.jpg)
+![whiteboard](sort-insertion.jpg)
 
 ## Efficiency
 
