@@ -28,9 +28,9 @@ namespace CodeChallenges.sorting
       }
     }
 
-    public static void MergeInsertion(int[] arr)
+    public static void MergeSort(int[] arr)
     {
-
-    }
+      
+    }  
   }
 }
