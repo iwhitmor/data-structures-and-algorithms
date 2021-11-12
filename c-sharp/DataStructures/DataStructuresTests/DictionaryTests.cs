@@ -39,12 +39,17 @@ namespace DataStructuresTests
     public void Can_get_value_by_asking_for_key()
     {
       //Arrange
-
+      var d = new Dictionary<int, string>();
+      d.Add(15, "happyFriday");
 
       //Act
-
+      bool result = d.TryGetValue(15, out string value);
 
       //Assert
+      Assert.True(result);
+      Assert.Equal("happyFriday", value);
     }
+
+
   }
 }
