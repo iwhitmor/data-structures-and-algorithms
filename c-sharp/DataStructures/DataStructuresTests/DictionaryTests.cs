@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Xunit;
 
 namespace DataStructuresTests
@@ -50,6 +51,20 @@ namespace DataStructuresTests
       Assert.Equal("happyFriday", value);
     }
 
+    [Fact]
+    public void Can_clear_dictionary()
+    {
+      //Arrange
+      var d = new Dictionary<int, string>();
+      d.Add(15, "happyFriday");
+      d.Add(11, "yay!");
+      d.Add(5, "hooray");
 
+      //Act
+      d.Clear();
+
+      //Assert
+      Assert.Empty(d);
+    }
   }
 }
