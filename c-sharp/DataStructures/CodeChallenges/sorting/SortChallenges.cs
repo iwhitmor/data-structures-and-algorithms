@@ -27,5 +27,10 @@ namespace CodeChallenges.sorting
 
       }
     }
+
+    public static void MergeSort(int[] arr)
+    {
+      
+    }  
   }
 }
