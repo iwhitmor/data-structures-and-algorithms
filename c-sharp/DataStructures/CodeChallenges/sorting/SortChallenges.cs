@@ -48,7 +48,7 @@ namespace CodeChallenges.sorting
       }
     }
 
-    public static void Merge(int[] left, int[] right, int[] array)
+    private static void Merge(int[] left, int[] right, int[] array)
     {
       int i = 0;
       int l = 0;
@@ -77,6 +77,43 @@ namespace CodeChallenges.sorting
       {
         array[i] = left[i];
       }
+    }
+
+    public static void QuickSort(int[] arr, int left, int right)
+    {
+      if (left < right)
+      {
+        int position = Partition(arr, left, right);
+
+        QuickSort(arr, left, position - 1);
+
+        QuickSort(arr, position + 1, right);
+      }
+    }
+
+    private static int Partition(int[] arr, int left, int right)
+    {
+      int pivot = arr[right];
+
+      int low = left - 1;
+
+      for (int i = left; i < right; i++)
+      {
+        if (arr[i] <= pivot)
+        {
+          low++;
+          Swap(arr, i, low);
+        }
+      }
+
+      return low + 1;
+    }
+
+    private static void Swap(int[] arr, int i, int low)
+    {
+      int temp = arr[i];
+      arr[i] = arr[low];
+      arr[low] = temp;
     }
   }
 }
