@@ -66,6 +66,5 @@ namespace CodeChallengesTests
       //Assert
       Assert.Equal(new[] { 1, 4, 20, 34, 43, 53, 55, 70, 75, 101 }, array);
     }
-
   } 
 }
