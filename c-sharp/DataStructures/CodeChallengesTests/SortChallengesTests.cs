@@ -43,5 +43,28 @@ namespace CodeChallengesTests
       //Assert
       Assert.Equal(expected, arr);
     }
+
+    [Fact]
+    public void MergeSort_is_working()
+    {
+      //Arrange
+      int[] array = new int[10];
+      array[0] = 53;
+      array[1] = 20;
+      array[2] = 4;
+      array[3] = 101;
+      array[4] = 75;
+      array[5] = 70;
+      array[6] = 55;
+      array[7] = 34;
+      array[8] = 1;
+      array[9] = 43;
+
+      //Act
+      SortChallenges.MergeSort(array);
+
+      //Assert
+      Assert.Equal(new[] { 1, 4, 20, 34, 43, 53, 55, 70, 75, 101 }, array);
+    }
   } 
 }
