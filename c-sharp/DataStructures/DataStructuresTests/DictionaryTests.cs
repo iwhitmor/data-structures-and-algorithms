@@ -19,8 +19,6 @@ namespace DataStructuresTests
 
       //Assert
       Assert.True(d.ContainsKey(11));
-
-
     }
 
     [Fact]
@@ -49,6 +47,20 @@ namespace DataStructuresTests
       //Assert
       Assert.True(result);
       Assert.Equal("happyFriday", value);
+    }
+
+    [Fact]
+    public void Can_get_value_by_key_part_two()
+    {
+      //Arrange
+      var d = new Dictionary<int, string>();
+      d.Add(100, "whatsup");
+
+      //Act
+      string value = d[100];
+
+      //Assert
+      Assert.Equal("whatsup", value);
     }
 
     [Fact]
