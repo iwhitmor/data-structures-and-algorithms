@@ -44,7 +44,7 @@ namespace CodeChallengesTests
       Assert.Equal(expected, arr);
     }
 
-    [Fact]
+    [Fact(Skip = "skipped")]
     public void MergeSort_is_working()
     {
       //Arrange
