@@ -22,7 +22,7 @@
 
 ---
 
-### Problem Domain
+## Problem Domain
 
 Implement a simplified LEFT JOIN for 2 Hashmaps
 
@@ -44,7 +44,7 @@ Output: Arrays of combined hashmaps using LEFT JOIN logic
 
 ---
 
-## Unit Tests
+### Unit Tests
 
 Write tests for the following scenarios, and any other cases that help you ensure your code is working as expected.
 
