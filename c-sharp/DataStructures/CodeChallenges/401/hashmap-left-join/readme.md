@@ -40,7 +40,7 @@ Output: Arrays of combined hashmaps using LEFT JOIN logic
 
 | Time | Space |
 | :----------- |
-| O(n) | O(n) |
+| O(n+m) | O(n) |
 
 ---
 
