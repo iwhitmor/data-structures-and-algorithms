@@ -13,10 +13,12 @@
     <None Remove="401\sort\" />
     <None Remove="sorting\" />
     <None Remove="401\hashmap-repeated-word\" />
+    <None Remove="401\hashmap-tree-intersection\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="401\tree-max\" />
     <Folder Include="sorting\" />
     <Folder Include="401\hashmap-repeated-word\" />
+    <Folder Include="401\hashmap-tree-intersection\" />
   </ItemGroup>
 </Project>
