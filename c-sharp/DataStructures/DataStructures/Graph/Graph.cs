@@ -11,6 +11,26 @@ namespace DataStructures.Graph
     {
 
     }
+
+    public void AddEdge(string from, string to)
+    {
+
+    }
+
+    public static List<GraphNode> GetNodes()
+    {
+
+    }
+
+    public static List<GraphEdge> GetNeighbors()
+    {
+
+    }
+
+    public static int Size()
+    {
+
+    }
   }
 
   public class GraphNode
