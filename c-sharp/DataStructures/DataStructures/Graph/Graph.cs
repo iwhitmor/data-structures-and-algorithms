@@ -6,30 +6,23 @@ namespace DataStructures.Graph
 {
   public class Graph
   {
-    public IEnumerable<GraphNode> Nodes { get; } = new List<GraphNode>();
+    private List<GraphNode> nodes = new List<GraphNode>();
 
-    //public GraphNode AddNode();
+    public IEnumerable<GraphNode> Nodes => nodes;
 
-    //public void AddEdge(string from, string to);
-
-    //public static List<GraphNode> GetNodes();
-
-    //public static List<GraphEdge> GetNeighbors();
-
-    //public static int Size();
-
-
-    public int Count => Nodes.Count();
+    public int Count => nodes.Count();
 
     public GraphNode AddNode(string value)
     {
 
-      return new GraphNode
+      var newNode = new GraphNode
       {
         Value = value,
       };
+
+      nodes.Add(newNode);
+
+      return newNode;
     }
   }
 }
-
-

@@ -28,6 +28,9 @@ namespace DataStructuresTests
       //Assert
       Assert.NotNull(result);
       Assert.Equal("Ian", result.Value);
+      Assert.NotEmpty(graph.Nodes);
+      Assert.Equal(1, graph.Count);
+      Assert.Contains(result, graph.Nodes);
     }
   }
 }
