@@ -32,5 +32,21 @@ namespace DataStructuresTests
       Assert.Equal(1, graph.Count);
       Assert.Contains(result, graph.Nodes);
     }
+
+    [Fact]
+    public void AddEdge_with_nodes_makes_them_neighbors()
+    {
+      //Arrange
+      var graph = new Graph();
+      var node1 = graph.AddNode("Sarah");
+      var node2 = graph.AddNode("Wesley");
+
+      //Act
+      //TODO
+      //graph.AddEdge(node1, node2);
+
+      //Assert
+
+    }
   }
 }
