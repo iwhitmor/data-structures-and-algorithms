@@ -24,8 +24,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="TreesTests\" />
+    <None Remove="Graphs\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TreesTests\" />
+    <Folder Include="Graphs\" />
   </ItemGroup>
 </Project>

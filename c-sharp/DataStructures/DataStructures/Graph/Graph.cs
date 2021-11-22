@@ -1,49 +1,29 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace DataStructures.Graph
 {
   public class Graph
   {
-    public List<GraphNode> Nodes;
+    public IEnumerable<GraphNode> Nodes { get; } = new List<GraphNode>();
 
-    public GraphNode AddNode()
+    public object AddNode(string v)
     {
-
+      return null;
     }
 
-    public void AddEdge(string from, string to)
-    {
+    //public GraphNode AddNode();
 
-    }
+    //public void AddEdge(string from, string to);
 
-    public static List<GraphNode> GetNodes()
-    {
+    //public static List<GraphNode> GetNodes();
 
-    }
+    //public static List<GraphEdge> GetNeighbors();
 
-    public static List<GraphEdge> GetNeighbors()
-    {
+    //public static int Size();
 
-    }
 
-    public static int Size()
-    {
-
-    }
-  }
-
-  public class GraphNode
-  {
-    string Value;
-
-    List<GraphEdge> Neighbors;
-  }
-
-  internal class GraphEdge
-  {
-    GraphNode From;
-    GraphNode To;
-    int Weight;
+    public int Count => Nodes.Count();
   }
 }
