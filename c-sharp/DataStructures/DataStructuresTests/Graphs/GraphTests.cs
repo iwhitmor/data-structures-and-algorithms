@@ -27,6 +27,7 @@ namespace DataStructuresTests
 
       //Assert
       Assert.NotNull(result);
+      Assert.Equal("Ian", result.Value);
     }
   }
 }

@@ -8,11 +8,6 @@ namespace DataStructures.Graph
   {
     public IEnumerable<GraphNode> Nodes { get; } = new List<GraphNode>();
 
-    public object AddNode(string v)
-    {
-      return null;
-    }
-
     //public GraphNode AddNode();
 
     //public void AddEdge(string from, string to);
@@ -25,5 +20,16 @@ namespace DataStructures.Graph
 
 
     public int Count => Nodes.Count();
+
+    public GraphNode AddNode(string value)
+    {
+
+      return new GraphNode
+      {
+        Value = value,
+      };
+    }
   }
 }
+
+

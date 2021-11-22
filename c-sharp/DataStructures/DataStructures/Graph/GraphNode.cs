@@ -2,5 +2,6 @@
 {
     public class GraphNode
     {
+      public string Value { get; set; }
     }
 }
