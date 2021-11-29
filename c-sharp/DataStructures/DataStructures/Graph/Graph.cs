@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace DataStructures.Graph
 {
-  public class Graph
+  public partial class Graph
   {
     private List<GraphNode> nodes = new List<GraphNode>();
 
