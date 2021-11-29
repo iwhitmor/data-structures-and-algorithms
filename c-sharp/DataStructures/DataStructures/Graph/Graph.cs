@@ -29,5 +29,13 @@ namespace DataStructures.Graph
     {
       return node.Neighbors;
     }
+
+    public void AddEdge(GraphNode node1, GraphNode node2)
+    {
+      node1.Neighbors.Add(new GraphEdge
+      {
+        Node = node2,
+      });
+    }
   }
 }

@@ -2,6 +2,6 @@
 {
   public class GraphEdge
   {
-
+    public GraphNode Node;
   }
 }

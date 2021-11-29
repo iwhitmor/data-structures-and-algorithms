@@ -42,11 +42,10 @@ namespace DataStructuresTests
       var node2 = graph.AddNode("Wesley");
 
       //Act
-      //TODO
-      //graph.AddEdge(node1, node2);
+      graph.AddEdge(node1, node2);
 
       //Assert
-
+      Assert.Contains(node1.Neighbors, edge => edge.Node == node2);
     }
   }
 }
