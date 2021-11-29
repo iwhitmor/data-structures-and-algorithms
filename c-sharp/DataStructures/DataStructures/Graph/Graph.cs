@@ -24,5 +24,10 @@ namespace DataStructures.Graph
 
       return newNode;
     }
+
+    public IEnumerable<GraphEdge> GetNeighbors(GraphNode node)
+    {
+      return node.Neighbors;
+    }
   }
 }
