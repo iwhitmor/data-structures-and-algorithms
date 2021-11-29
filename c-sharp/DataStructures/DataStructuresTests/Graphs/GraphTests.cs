@@ -46,6 +46,7 @@ namespace DataStructuresTests
 
       //Assert
       Assert.Contains(node1.Neighbors, edge => edge.Node == node2);
+      Assert.Empty(node2.Neighbors);
     }
   }
 }
