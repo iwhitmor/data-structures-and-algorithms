@@ -37,5 +37,10 @@ namespace DataStructures.Graph
         Node = node2,
       });
     }
+
+    public IEnumerable<GraphNode> BreadthFirst(GraphNode start)
+    {
+      yield break;
+    }
   }
 }
