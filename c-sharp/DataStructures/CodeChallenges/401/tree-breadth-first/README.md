@@ -3,6 +3,7 @@
 ## Breadth First Traversal
 
 * Traverse a tree using a breadth first traversal
+
 ---
 
 ### Problem Domain
