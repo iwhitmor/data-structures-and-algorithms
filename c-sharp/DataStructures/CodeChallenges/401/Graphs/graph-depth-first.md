@@ -8,7 +8,7 @@
 
 * Write a method named DepthFirst()
 
-  * Arguments: None (starting point of the serach)
+  * Arguments: Node (starting point of the serach)
 
   * Return: Nodes in pre-order traversal order
 
@@ -26,7 +26,7 @@
 
 * Time: O(n)
 
-* Space: O(n)
+* Space: O(n^2)
 
 ---
 
